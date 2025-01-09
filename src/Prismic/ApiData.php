@@ -124,6 +124,11 @@ class ApiData
      */
     public static function withJsonObject(stdClass $json) : self
     {
+        unset($json->forms->helpcentre_prototype);
+        unset($json->forms->helpcentre);
+        unset($json->forms->external_examiner_reports);
+        unset($json->forms->changes);
+        unset($json->forms->student_policies);
         $experiments = isset($json->experiments)
                      ? Experiments::parse($json->experiments)
                      : Experiments::parse(new stdClass);
