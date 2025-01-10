@@ -1,0 +1,9 @@
+.phpunit.result.cache
+/build/
+phpdoc.dist.xml
+phpdoc.phar
+phpunit.xml
+
+### Composer ###
+composer.phar
+/vendor/
